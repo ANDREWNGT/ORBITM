@@ -32,7 +32,7 @@ from matplotlib.backends.backend_tkagg import NavigationToolbar2Tk
 
 # Import local libraries
 from source.orbmrun import orbmrun
-from source.orbmstk import orbmstk
+#from source.orbmstk import orbmstk
 
 class RunGUI:
     
@@ -130,7 +130,7 @@ class RunGUI:
         
         # Define the path to the ORBITM logo file.
         orbitm_logo = dirname(dirname(abspath(__file__)))
-        orbitm_logo = orbitm_logo + '\docs\_static\orbitm_logo.png'
+        orbitm_logo = orbitm_logo + '/docs/_static/orbitm_logo.png'
         
         # Get the users current screen height.
         screen_height = master.winfo_screenheight()
@@ -1361,7 +1361,7 @@ class RunGUI:
             
             # If using STK 10 or STK 11
             elif (mode == 2 or mode == 3) and error_flag == True:
-                
+                pass
                 # Outputs five objects, with N = total number of samples.
                 # epoch -> 1xN list comprising time of simulation in seconds
                 # alt   -> 1xN list comprising geodetic altitude of satellite
@@ -1369,9 +1369,9 @@ class RunGUI:
                 # dv    -> Float value for total Delta-V required
                 # imp   -> Float value for total impulse required
                 
-                epoch, alt, sma, dv, imp = orbmstk( mode, ts, tf, Cd, Ad,
-                                                    oa, oe, oi, oR, ow, oM,
-                                                    mt, mf, kg, imin, imax )
+                # epoch, alt, sma, dv, imp = orbmstk( mode, ts, tf, Cd, Ad,
+                #                                     oa, oe, oi, oR, ow, oM,
+                #                                     mt, mf, kg, imin, imax )
             
             ##################################################################
             ##################################################################

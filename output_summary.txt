@@ -1,0 +1,3 @@
+Lifetime decay is estimated to be on 13 Feb 2028 10:00:00.000 after 698 orbits.The lifetime is 43 days. 
+The total impulse needed: 0.0 
+The total Delta-V (m/s) needed is 0.0 
